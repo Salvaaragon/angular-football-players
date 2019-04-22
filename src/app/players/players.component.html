@@ -1,0 +1,32 @@
+<h2>Jugadores</h2>
+
+<div>
+    <label>Nombre del jugador:
+      <input #playerName />
+    </label><br>
+    <label>Equipo en el que juega:
+        <input #playerTeam />
+    </label><br>
+    <label>Goles marcados:
+        <input #playerGoals />
+    </label><br>
+    <label>Asistencias de gol dadas:
+        <input #playerAssistances />
+    </label>
+    <!-- (click) passes input value to add() and then clears the input -->
+    <button (click)="add(playerName.value, playerTeam.value, playerGoals.value, playerAssistances.value); playerName.value=''; playerTeam.value=''; playerGoals.value=''; playerAssistances.value=''">
+      Añadir
+    </button>
+  </div>
+
+<ul class="players">
+  <li *ngFor="let player of players">
+    <a routerLink="/detail/{{player.id}}">
+      <span class="badge">{{player.id}}</span> {{player.name}} 
+      <span class="badge-goals">{{player.goals}} Goles</span> 
+      <span class="badge-assistances">{{player.assistances}} Asistencias</span>
+    </a>
+    <button class="delete" title="Eliminar jugador" (click)="delete(player)">x</button>
+  </li>
+</ul>
+

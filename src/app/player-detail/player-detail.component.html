@@ -1,0 +1,29 @@
+<div *ngIf="player">
+
+  <h2>Detalles de {{player.name | uppercase}}</h2>
+  <div><span>Id: </span>{{player.id}}</div>
+  <div>
+    <label>Nombre:
+      <input [(ngModel)]="player.name" placeholder="Nombre"/>
+    </label>
+  </div>
+  <div>
+    <label>Equipo:
+      <input [(ngModel)]="player.team" placeholder="Equipo"/>
+    </label>
+  </div>
+  <div>
+    <label>Goles:
+      <input [(ngModel)]="player.goals" placeholder="Goles"/>
+    </label>
+  </div>
+  <div>
+    <label>Asistencias:
+      <input [(ngModel)]="player.assistances" placeholder="Asistencias"/>
+    </label>
+  </div>
+
+</div>
+
+<button (click)="save()">Guardar</button>
+<button (click)="goBack()">Volver atrás</button>

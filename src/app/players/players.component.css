@@ -1,0 +1,94 @@
+.players {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: 28em;
+}
+.players li {
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: .3em 0;
+    height: 1.6em;
+    border-radius: 4px;
+}
+.players li:hover {
+    color: #607D8B;
+    background-color: #DDD;
+    left: .1em;
+}
+.players a {
+    color: #888;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    width: auto;
+}
+   
+.players a:hover {
+    color:#607D8B;
+}
+.players .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #607D8B;
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+}
+.players .badge-goals {
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(175, 83, 83);
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    float: right;
+    border-radius: 0 4px 4px 0;
+}
+.players .badge-assistances {
+    font-size: small;
+    color: white;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: rgb(96, 139, 107);
+    line-height: 1em;
+    position: relative;
+    left: -1px;
+    top: -4px;
+    height: 1.8em;
+    float: right;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+}
+   
+button:hover {
+    background-color: #cfd8dc;
+}
+   
+button.delete {
+    position: relative;
+    left: 450px;
+    top: -32px;
+    background-color: gray !important;
+    color: white;
+    height: 1.8em;
+}
